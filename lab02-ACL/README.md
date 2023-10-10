@@ -12,22 +12,23 @@ Un *MAC flooding attack* è un attacco per cui si cerca di saturare la memoria d
 <div style="text-align: center">
 <img src="./images/topology.png" alt="Experimental topology" style="width: 80%;">
 </div>
+
 Il router denominato `switch-1` è lo stesso docker container dei client con la differenza che ha più interfacce di rete e viene poi configurato come un router.
 
 ## Configurazione dei client
-Sui vari client, nella cartella `/root`, sono stati definiti dei file di configurazione chiamati `ip.conf` che memorizzano i seguenti comandi:
-```
-ip link set dev eth0 address x0:x0:x0;x0:x0:x0 
+Sui vari client, nella cartella `/root/lab02`, sono stati definiti dei file di configurazione chiamati `ip.conf` che memorizzano i seguenti comandi:
+```bash
+ip link set dev eth0 address x0:x0:x0:x0:x0:x0 
 ip addr add 10.0.0.X/24 dev eth0 
 ```
 dove `x0` va sostituito con `a0` per il `client-1`, con `b0` per `client-2` e con `c0` per il `client-3`; allo stesso modo `X` va sostituita con `1`, `2` o `3` rispettivamente per `client-1`, `client-2` e `client-3`. 
 
-Le configurazioni sono rese attive dal comando `bash ~/ip.conf`.
+Le configurazioni sono rese attive dal comando `bash ~/lab02/ip.conf`.
 
 ## Configurazione del router
 ### Creazione del bridge
 Sul router si eseguono i seguenti comandi:
-```
+```bash
 ip link add name bridge type bridge
 ip link set bridge up
 ip link set dev eth0 master bridge
@@ -37,22 +38,18 @@ ip link set dev eth2 master bridge
 
 Questi comandi servono a creare una interfaccia di tipo `bridge` con il nome specificato, la attiva e poi si collegano le interfacce `eth0, eth1, eth2` a questo bridge. In questo modo, sono stati collegati tra loro segmenti della rete. 
 
-Queste configurazioni sono memorizzate nel file `~/ip.conf` del container e possono essere impostate col comando `bash ip.conf`.
+Queste configurazioni sono memorizzate nel file `~/lab02/ip.conf` del container e possono essere impostate col comando `bash ~/lab02/ip.conf`.
 
 ### Aggiunta dei filtri
-Per gestire la sicurezza attraverso le *Access Control List* è necessario impostare delle regole che filtrano il traffico: 
+Per gestire la sicurezza attraverso le *Access Control List* è necessario impostare delle regole che filtrano il traffico, inserite nel file `/root/lab02/ebtables.conf`: 
 
-```
+```bash
 ebtables -A FORWARD --in-interface eth0 -s ! a0:a0:a0:a0:a0:a0 -j DROP
-
 ebtables -A FORWARD --in-interface eth1 -s ! b0:b0:b0:b0:b0:b0 -j DROP
-
 ebtables -A FORWARD --in-interface eth2 -s ! c0:c0:c0:c0:c0:c0 -j DROP
 
 ebtables -A INPUT --in-interface eth0 -s ! a0:a0:a0:a0:a0:a0 -j DROP
-
 ebtables -A INPUT --in-interface eth1 -s ! b0:b0:b0:b0:b0:b0 -j DROP
-
 ebtables -A INPUT --in-interface eth2 -s ! c0:c0:c0:c0:c0:c0 -j DROP
 ```
 Con questi comandi, stiamo applicando due regole diverse a ogni interfaccia **del router**. In particolare:
@@ -69,8 +66,8 @@ Alla luce della precedente spiegazione, si può intuire che nel nostro caso in c
 
 In questo caso, le uniche macchine attive oltre al router sono `client-1` e `client-2`. Inoltre, al `client-2` è assegnato l'indirizzo MAC `d0:d0:d0:d0:d0:d0`. 
 
-Sul router eseguiamo il comando `bash ~/ip.conf` per creare il `bridge` e collegarvi le interfacce. Poi, però, applchiamo come unica regola `ebtable` la seguente:
-```
+Sul router eseguiamo il comando `bash ~/lab02/ip.conf` per creare il `bridge` e collegarvi le interfacce. Poi, però, applchiamo come unica regola `ebtable` la seguente:
+```bash
 ebtables -A FORWARD --in-interface eth1 -s ! b0:b0:b0:b0:b0:b0 -j DROP
 ```
 
