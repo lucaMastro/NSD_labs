@@ -1,12 +1,13 @@
-# Note nell'esecuzione del laboratorio
 
-## Cosa sono le ACL
+# Cosa sono le ACL
 Le *Access Control Lists* (ACL) sono uno strumento nella sicurezza informatica poiché agiscono come guardiani digitali che regolano l'accesso alle risorse di un sistema. Organizzate in *catene*, le ACL permettono una gestione strutturata delle politiche di accesso, semplificando la definizione di regole dettagliate che costituiscono una soluzione *router-based* alla vulnerabilità delle trame *Ethernet*. In particolare, rendono più complicata l'espansione della rete attraverso l'introduzione di *switch* non autorizzati e prevengono la rete da attacchi come *MAC flooding*.
 
 Tra i vantaggi delle ACL spicca il controllo preciso sull'accesso alle risorse, contribuendo a ridurre il traffico non necessario e favorendo la conformità normativa. Tuttavia, la configurazione di ACL complesse può risultare un compito intricato, richiedendo una comprensione approfondita delle regole e affrontando sfide come la manutenzione continua e le limitazioni di scalabilità. La precisione nella scrittura delle regole è essenziale per evitare errori che potrebbero compromettere la sicurezza del sistema mentre la loro gestione su dispositivi distribuiti o in ambienti cloud può aumentare ulteriormente la complessità operativa.
 
-### Memo: MAC flooding
+## Memo: MAC flooding
 Un *MAC flooding attack* è un attacco per cui si cerca di saturare la memoria di uno switch dedicata alla *MAC address table* inviando un gran numero di pacchetti, ognuno con un indirizzo MAC diverso. In questo modo, lo switch invierà in *broadcatst* tutti i pacchetti ricevuti e l'attaccante può avere accesso a eventuali informazioni sensibili attraverso un analizzatore di rete.
+
+# Note nell'esecuzione del laboratorio
 
 ## Infrastruttura
 <div style="text-align: center">

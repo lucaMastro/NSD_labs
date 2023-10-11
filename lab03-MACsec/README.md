@@ -1,6 +1,5 @@
-# Note nell'esecuzione del laboratorio
 
-## Cos'è MACsec
+# Cos'è MACsec
 Questo standard è progettato per operare al livello di controllo degli accessi ai mezzi fisici, definendo un approccio alla sicurezza di rete che include confidenzialità, integrità e protezione dal replay dei dati senza connessione. Il formato dei frame MACsec è simile a quello di Ethernet, ma presenta campi addizionali fondamentali, tra cui:
 - *Security Tag*: dopo aver settato il campo *EtherType* al valore relativo a MACsec, cioè `0x88e5`, i successivi byte vengono interpretati come byte dell'header. Tra i vari campi è importante segnalare il campo `Sequence Number` che serve a prevenire *replay attacks*.
 
@@ -10,6 +9,7 @@ MACsec organizza le stazioni connesse attraverso canali sicuri unidirezionali in
 
 La suite crittografica predefinita specificata dal protocollo è GCM-AES-128 (Galois/Counter Mode of AES con chiave da 128 bit). Successivamente, è stata introdotta GCM-AES-256, utilizzando una chiave da 256 bit per una maggiore sicurezza. Un aspetto importante da sottolineare è che **la gestione delle chiavi è al di fuori dello scope del 802.1AE** e viene definita dallo standard 802.1X-2010, sottolineando la necessità di integrare correttamente la gestione delle chiavi per una sicurezza completa.
 
+# Note nell'esecuzione del laboratorio
 ## Infrastruttura
 <div style="text-align: center">
 <img src="./images/topology.png" alt="Experimental topology" style="width: 80%;">
