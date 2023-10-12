@@ -4,8 +4,8 @@
     "auto_start": false,
     "drawing_grid_size": 25,
     "grid_size": 75,
-    "name": "lab04-VLAN",
-    "project_id": "19b16938-b577-4239-9f8e-d17595e947c5",
+    "name": "lab04bis-VLAN_attack",
+    "project_id": "dc999efd-accc-4459-a68b-5bddd82ba31a",
     "revision": 9,
     "scene_height": 1000,
     "scene_width": 2000,
@@ -18,7 +18,7 @@
         "computes": [],
         "drawings": [
             {
-                "drawing_id": "7d9fa1b1-da55-4080-bc57-c7a68c3cc918",
+                "drawing_id": "1919cabf-0226-4a6f-adcb-1345cdbc18c5",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"157\" height=\"188\"><rect width=\"157\" height=\"188\" fill=\"#99c1f1\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
@@ -27,7 +27,7 @@
                 "z": 0
             },
             {
-                "drawing_id": "0c9aeab7-c05c-4320-abf0-b0c4cfe5fad7",
+                "drawing_id": "91586333-f354-458c-b0b3-3ffd6f5a29fb",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"95\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">10.0.10.101</text></svg>",
@@ -36,7 +36,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "85527eeb-134f-486b-852e-8a1626816dfc",
+                "drawing_id": "c45094a4-617f-4167-86cb-508c7417a120",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"157\" height=\"188\"><rect width=\"157\" height=\"188\" fill=\"#f9f06b\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
@@ -45,7 +45,7 @@
                 "z": 0
             },
             {
-                "drawing_id": "e91449a7-5cd7-49fe-ad36-0525eb4acf90",
+                "drawing_id": "469ec3ea-ed78-4d15-a689-327ca57d62c0",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"95\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">10.0.20.101</text></svg>",
@@ -54,7 +54,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "4cf07974-43b1-4fb3-96a9-e490b1b85b94",
+                "drawing_id": "a840fb8f-5b12-4b7e-ae83-66542a8cd58e",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"157\" height=\"188\"><rect width=\"157\" height=\"188\" fill=\"#99c1f1\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
@@ -63,7 +63,7 @@
                 "z": 0
             },
             {
-                "drawing_id": "ab7c914b-88e5-49e2-80f2-07a41c9f750c",
+                "drawing_id": "c6849069-8780-4bc3-9fb5-c3927382d892",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"95\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">10.0.10.102</text></svg>",
@@ -72,25 +72,16 @@
                 "z": 2
             },
             {
-                "drawing_id": "31b3daed-fc0b-4359-9ea8-a1dea8d37001",
-                "locked": false,
-                "rotation": 0,
-                "svg": "<svg width=\"157\" height=\"188\"><rect width=\"157\" height=\"188\" fill=\"#f9f06b\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
-                "x": 325,
-                "y": 119,
-                "z": 0
-            },
-            {
-                "drawing_id": "1b8f4c35-39bf-48f8-b3cf-bac67c9105de",
+                "drawing_id": "ac09344f-f466-4763-932e-e36adf27100a",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"95\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">10.0.20.102</text></svg>",
-                "x": 356,
-                "y": 272,
+                "x": 390,
+                "y": 259,
                 "z": 2
             },
             {
-                "drawing_id": "ca379151-a402-4659-a1da-fe241021d32e",
+                "drawing_id": "41e163b9-b78d-4664-80e1-c85ba01637d4",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"80\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#e01b24\" fill-opacity=\"1.0\">Trunk link</text></svg>",
@@ -99,7 +90,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "5fdeb420-165d-4a68-a0bf-dd04771a4998",
+                "drawing_id": "3c27c6fc-07ca-4dea-8a51-baf6e9112297",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"45\" height=\"17\"><rect width=\"45\" height=\"17\" fill=\"#f9f06b\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
@@ -108,7 +99,7 @@
                 "z": 0
             },
             {
-                "drawing_id": "f1114084-3cbb-4397-8f84-9e9591aaf391",
+                "drawing_id": "a1634e11-9ac5-4af9-8d42-3be478fe91e9",
                 "locked": true,
                 "rotation": 0,
                 "svg": "<svg width=\"45\" height=\"17\"><rect width=\"45\" height=\"17\" fill=\"#99c1f1\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
@@ -117,7 +108,7 @@
                 "z": 0
             },
             {
-                "drawing_id": "aaccc582-49df-4e32-88b9-555ccc91b152",
+                "drawing_id": "68f2396b-58fa-492a-8c43-1cad88fc46d6",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"176\" height=\"31\"><rect width=\"176\" height=\"31\" fill=\"#99c1f1\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
@@ -126,7 +117,7 @@
                 "z": 0
             },
             {
-                "drawing_id": "faac48e5-1722-4a95-a361-9e2bcaca3802",
+                "drawing_id": "9e29cc46-8156-4f01-94c5-88f2615a616a",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"171\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 10: 10.0.10.0/24</text></svg>",
@@ -135,7 +126,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "eb15f1d8-1734-4e69-bafd-76d07368f96f",
+                "drawing_id": "b8bf79fb-4692-4534-8320-e9d17e85c23f",
                 "locked": true,
                 "rotation": 0,
                 "svg": "<svg width=\"171\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 20: 10.0.20.0/24</text></svg>",
@@ -144,19 +135,64 @@
                 "z": -1
             },
             {
-                "drawing_id": "c5eea2a4-2f2f-4630-858d-1e18bf30bf7d",
+                "drawing_id": "70629cf0-2a22-4d46-b55a-4f57f3863854",
                 "locked": true,
                 "rotation": 0,
                 "svg": "<svg width=\"176\" height=\"31\"><rect width=\"176\" height=\"31\" fill=\"#f9f06b\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
                 "x": -212,
                 "y": -336,
                 "z": -2
+            },
+            {
+                "drawing_id": "086319f7-8ec7-408a-a78a-b6487028ddc4",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"157\" height=\"188\"><rect width=\"157\" height=\"188\" fill=\"#8ff0a4\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
+                "x": -499,
+                "y": -351,
+                "z": -1
+            },
+            {
+                "drawing_id": "c8138fec-997a-4c70-8c94-8c9dc087f4be",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"127\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 1 - default</text></svg>",
+                "x": -486,
+                "y": -343,
+                "z": 2
+            },
+            {
+                "drawing_id": "37127ab2-54a1-4ea0-9504-8432f6a15340",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"200.0\" height=\"200.0\"><ellipse cx=\"100\" rx=\"100\" cy=\"100\" ry=\"100\" fill=\"#f9f06b\" fill-opacity=\"1.0\" stroke-width=\"6\" stroke=\"#e01b24\" /></svg>",
+                "x": 330,
+                "y": 119,
+                "z": 0
+            },
+            {
+                "drawing_id": "02fad0dc-4cab-400d-bf4a-c03fa754f634",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"59\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#e01b24\" fill-opacity=\"1.0\">VICTIM</text></svg>",
+                "x": 400,
+                "y": 283,
+                "z": 2
+            },
+            {
+                "drawing_id": "3db41abb-88ec-488c-bdbb-2050161db1c1",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"140\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">a0:a0:a0:a0:a0:a0</text></svg>",
+                "x": 361,
+                "y": 238,
+                "z": 2
             }
         ],
         "links": [
             {
                 "filters": {},
-                "link_id": "7c326d9d-3925-4352-bfd2-c1717fba265e",
+                "link_id": "51ceeb9d-f44a-4cd7-b9f3-873bd028a4b0",
                 "link_style": {},
                 "nodes": [
                     {
@@ -168,7 +204,7 @@
                             "x": 49,
                             "y": -5
                         },
-                        "node_id": "e01d46ab-cbcf-4564-b9c6-fae09fd63fca",
+                        "node_id": "079cc41a-94ce-4c8f-b3ac-1f9bde5791f8",
                         "port_number": 0
                     },
                     {
@@ -177,10 +213,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "eth0",
-                            "x": 10,
-                            "y": 65
+                            "x": -42,
+                            "y": 53
                         },
-                        "node_id": "2102272c-10e0-47f9-8f58-cf91fd1757e0",
+                        "node_id": "a1ec7c93-7968-456a-b693-091376a6b85b",
                         "port_number": 0
                     }
                 ],
@@ -188,7 +224,7 @@
             },
             {
                 "filters": {},
-                "link_id": "67de6cdf-4cc8-427c-990a-2d3c320b6c83",
+                "link_id": "ab047055-7c12-437d-88f3-2f88a042833d",
                 "link_style": {},
                 "nodes": [
                     {
@@ -200,7 +236,7 @@
                             "x": -40,
                             "y": -15
                         },
-                        "node_id": "249cbabd-4b6f-4a2e-902a-2dc172daa7a1",
+                        "node_id": "f70ac387-ad40-49cc-b93e-bedb7ce25995",
                         "port_number": 0
                     },
                     {
@@ -209,10 +245,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "eth1",
-                            "x": 50,
-                            "y": 64
+                            "x": 51,
+                            "y": 53
                         },
-                        "node_id": "2102272c-10e0-47f9-8f58-cf91fd1757e0",
+                        "node_id": "a1ec7c93-7968-456a-b693-091376a6b85b",
                         "port_number": 0
                     }
                 ],
@@ -220,7 +256,7 @@
             },
             {
                 "filters": {},
-                "link_id": "1ebe018b-dc99-43d4-853a-240afde7c9c9",
+                "link_id": "58463fa0-205b-4799-b95f-5f33cbae4fd2",
                 "link_style": {},
                 "nodes": [
                     {
@@ -229,10 +265,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "eth2",
-                            "x": 69,
-                            "y": 31
+                            "x": 77,
+                            "y": 5
                         },
-                        "node_id": "2102272c-10e0-47f9-8f58-cf91fd1757e0",
+                        "node_id": "a1ec7c93-7968-456a-b693-091376a6b85b",
                         "port_number": 0
                     },
                     {
@@ -244,7 +280,7 @@
                             "x": -55,
                             "y": 37
                         },
-                        "node_id": "f5368cda-bdac-4ce5-a703-4b1a7172df05",
+                        "node_id": "f1fb785b-bb47-4418-baa2-8b61ab5f4b00",
                         "port_number": 0
                     }
                 ],
@@ -252,7 +288,7 @@
             },
             {
                 "filters": {},
-                "link_id": "60594cfa-0361-4e01-8d13-5e6ae055ed00",
+                "link_id": "d92b46be-d062-430a-aad5-787ffed3be5b",
                 "link_style": {},
                 "nodes": [
                     {
@@ -264,7 +300,7 @@
                             "x": 45,
                             "y": -21
                         },
-                        "node_id": "71e5abe1-7843-4a4c-864c-09b5199a2fe5",
+                        "node_id": "5bf57c32-e60a-40cc-9c23-148ea1452615",
                         "port_number": 0
                     },
                     {
@@ -276,7 +312,7 @@
                             "x": -34,
                             "y": 63
                         },
-                        "node_id": "f5368cda-bdac-4ce5-a703-4b1a7172df05",
+                        "node_id": "f1fb785b-bb47-4418-baa2-8b61ab5f4b00",
                         "port_number": 0
                     }
                 ],
@@ -284,7 +320,7 @@
             },
             {
                 "filters": {},
-                "link_id": "989d70bc-3a71-4e97-959c-c476caa80b02",
+                "link_id": "67fda769-2200-4f2c-8cb4-134b1062d521",
                 "link_style": {},
                 "nodes": [
                     {
@@ -296,7 +332,7 @@
                             "x": 30,
                             "y": -24
                         },
-                        "node_id": "a969a857-9fb7-4691-a947-7e842bfc79b0",
+                        "node_id": "6934cb50-44f4-4539-9569-c855950396e4",
                         "port_number": 0
                     },
                     {
@@ -308,7 +344,7 @@
                             "x": 45,
                             "y": 66
                         },
-                        "node_id": "f5368cda-bdac-4ce5-a703-4b1a7172df05",
+                        "node_id": "f1fb785b-bb47-4418-baa2-8b61ab5f4b00",
                         "port_number": 0
                     }
                 ],
@@ -316,7 +352,7 @@
             },
             {
                 "filters": {},
-                "link_id": "a6a9722d-b106-44d5-935a-fa2b8009357d",
+                "link_id": "34370f82-133b-4305-bd4d-6f5f94b6dc37",
                 "link_style": {},
                 "nodes": [
                     {
@@ -325,10 +361,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "eth0",
-                            "x": 35,
-                            "y": 69
+                            "x": 38,
+                            "y": 63
                         },
-                        "node_id": "7b2d79fc-eede-4f1a-bb1b-4b59f2f60845",
+                        "node_id": "cde0b03a-265e-4722-8fef-89f7c916e8df",
                         "port_number": 0
                     },
                     {
@@ -337,10 +373,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "eth3",
-                            "x": 42,
-                            "y": -24
+                            "x": -50,
+                            "y": 12
                         },
-                        "node_id": "f5368cda-bdac-4ce5-a703-4b1a7172df05",
+                        "node_id": "a1ec7c93-7968-456a-b693-091376a6b85b",
                         "port_number": 0
                     }
                 ],
@@ -350,7 +386,7 @@
         "nodes": [
             {
                 "compute_id": "vm",
-                "console": 5000,
+                "console": 5014,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -365,17 +401,17 @@
                 },
                 "locked": false,
                 "name": "client-1",
-                "node_id": "e01d46ab-cbcf-4564-b9c6-fae09fd63fca",
+                "node_id": "079cc41a-94ce-4c8f-b3ac-1f9bde5791f8",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 1,
-                    "aux": 5001,
+                    "aux": 5015,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "c9122f20b79e1dac55dcb8f610fbf7d859ab30557e0b552d490662881182a8ad",
+                    "container_id": "622bb760674c6491f101f4547f50c198a30d59d83e5035a5e723a006be66cd9b",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -394,7 +430,7 @@
             },
             {
                 "compute_id": "vm",
-                "console": 5002,
+                "console": 5016,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -409,17 +445,17 @@
                 },
                 "locked": false,
                 "name": "switch-1",
-                "node_id": "2102272c-10e0-47f9-8f58-cf91fd1757e0",
+                "node_id": "a1ec7c93-7968-456a-b693-091376a6b85b",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 4,
-                    "aux": 5003,
+                    "aux": 5017,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "db0ca0c25a4aeab268435e3ad22096e39d330681fce0d1a8b82cecad8056a3af",
+                    "container_id": "16648c8f3b49cd4b7e78f52baa765437190f004ff2dd7e91bfc1b4c2925d8fe2",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -438,7 +474,7 @@
             },
             {
                 "compute_id": "vm",
-                "console": 5004,
+                "console": 5018,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -453,17 +489,17 @@
                 },
                 "locked": false,
                 "name": "switch-2",
-                "node_id": "f5368cda-bdac-4ce5-a703-4b1a7172df05",
+                "node_id": "f1fb785b-bb47-4418-baa2-8b61ab5f4b00",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 4,
-                    "aux": 5005,
+                    "aux": 5019,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "dfc5f5f6cd935843c0ed2ac7ccd8ab454b9c9850d03fbf362e8d9edabd2a903f",
+                    "container_id": "fab0a8c9e484de5fac8cc0d46df14001170ea3d6a06e96319434ed81a4774ea2",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -482,51 +518,7 @@
             },
             {
                 "compute_id": "vm",
-                "console": 5006,
-                "console_auto_start": false,
-                "console_type": "telnet",
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 60,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "router",
-                    "x": 2,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "router",
-                "node_id": "7b2d79fc-eede-4f1a-bb1b-4b59f2f60845",
-                "node_type": "docker",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "adapters": 4,
-                    "aux": 5007,
-                    "console_http_path": "/",
-                    "console_http_port": 80,
-                    "console_resolution": "1024x768",
-                    "container_id": "25b7f98b7566a9c8abe63c9a6eacbfb8c1a7d41518daee3b58235c441975cb3d",
-                    "environment": null,
-                    "extra_hosts": null,
-                    "extra_volumes": [
-                        "/root"
-                    ],
-                    "image": "nsdcourse/basenet:latest",
-                    "start_command": null,
-                    "usage": ""
-                },
-                "symbol": ":/symbols/affinity/circle/blue/router.svg",
-                "template_id": "20f97695-c1d5-4e79-a0d4-a8b3043ae7eb",
-                "width": 60,
-                "x": 248,
-                "y": -323,
-                "z": 1
-            },
-            {
-                "compute_id": "vm",
-                "console": 5008,
+                "console": 5022,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -541,17 +533,17 @@
                 },
                 "locked": false,
                 "name": "client-2",
-                "node_id": "249cbabd-4b6f-4a2e-902a-2dc172daa7a1",
+                "node_id": "f70ac387-ad40-49cc-b93e-bedb7ce25995",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 1,
-                    "aux": 5009,
+                    "aux": 5023,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "950ce389bb5d54b9c1ea7f59d9fea1c09e2897b04058a785c5fb824155426c83",
+                    "container_id": "03621d6a0cab8c38c7d01214f8767e9838e65a556453904a2640dc16b4b96b17",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -570,7 +562,7 @@
             },
             {
                 "compute_id": "vm",
-                "console": 5010,
+                "console": 5024,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -585,17 +577,17 @@
                 },
                 "locked": false,
                 "name": "client-3",
-                "node_id": "71e5abe1-7843-4a4c-864c-09b5199a2fe5",
+                "node_id": "5bf57c32-e60a-40cc-9c23-148ea1452615",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 1,
-                    "aux": 5011,
+                    "aux": 5025,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "a9d6c5d1950a73fd353ddbe14df66d429cd803261690682af764676ea299ef3d",
+                    "container_id": "136ef4723cea355dd2fba5067edb8546fe838a1c1e6e3e1685cee5d5b45f1e0f",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -614,7 +606,7 @@
             },
             {
                 "compute_id": "vm",
-                "console": 5012,
+                "console": 5026,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -624,22 +616,22 @@
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "client-4",
-                    "x": 1,
-                    "y": 64
+                    "x": 64,
+                    "y": 21
                 },
                 "locked": false,
                 "name": "client-4",
-                "node_id": "a969a857-9fb7-4691-a947-7e842bfc79b0",
+                "node_id": "6934cb50-44f4-4539-9569-c855950396e4",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 1,
-                    "aux": 5013,
+                    "aux": 5027,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "055f450fc6ae66c812ca57d1329b52e757b150149ea0d33ee605feb605910319",
+                    "container_id": "fe907a723ecd39b51d87a8425e81e4e687cf829379fac64070f006501d665495",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -652,8 +644,52 @@
                 "symbol": ":/symbols/affinity/circle/blue/client.svg",
                 "template_id": "2a00b4ec-21b4-4854-8776-61ffb1b0d820",
                 "width": 60,
-                "x": 369,
-                "y": 184,
+                "x": 395,
+                "y": 173,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5006,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 60,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "attacker-1",
+                    "x": -11,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "attacker-1",
+                "node_id": "cde0b03a-265e-4722-8fef-89f7c916e8df",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5007,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "container_id": "ac2109edc559ccf70a0bf01fef7c82f6fba51fd52e63b12e08601d91ff9431cb",
+                    "environment": null,
+                    "extra_hosts": null,
+                    "extra_volumes": [
+                        "/root"
+                    ],
+                    "image": "nsdcourse/basenet:latest",
+                    "start_command": null,
+                    "usage": ""
+                },
+                "symbol": ":/symbols/affinity/circle/red/scull.svg",
+                "template_id": "2a00b4ec-21b4-4854-8776-61ffb1b0d820",
+                "width": 60,
+                "x": -455,
+                "y": -269,
                 "z": 1
             }
         ]
