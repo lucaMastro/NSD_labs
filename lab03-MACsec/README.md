@@ -19,7 +19,7 @@ Il router denominato `switch-1` è lo stesso docker container dei client con la 
 
 ## Configurazione del router
 ### Creazione del bridge
-Sul router si eseguono i seguenti comandi, memorizzati in `~/lab03/ip.conf`:
+Sul router si eseguono i seguenti comandi, memorizzati in `~/ip.conf`:
 ```bash
 ip link add name bridge type bridge
 ip link set bridge up
@@ -31,7 +31,7 @@ Questi comandi servono a creare una interfaccia di tipo `bridge` con il nome spe
 
 
 ## Configurazione dei client
-Sui vari client, nella cartella `/root/lab03`, sono stati definiti dei file di configurazione chiamati `ip.conf` che memorizzano i seguenti comandi:
+Sui vari client, nella cartella `/root`, sono stati definiti dei file di configurazione chiamati `ip.conf` che memorizzano i seguenti comandi:
 ```bash
 ip link set dev eth0 address x0:x0:x0:x0:x0:x0 
 ip addr add 10.0.0.X/24 dev eth0 

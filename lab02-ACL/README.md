@@ -17,14 +17,14 @@ Un *MAC flooding attack* è un attacco per cui si cerca di saturare la memoria d
 Il router denominato `switch-1` è lo stesso docker container dei client con la differenza che ha più interfacce di rete e viene poi configurato come un router.
 
 ## Configurazione dei client
-Sui vari client, nella cartella `/root/lab02`, sono stati definiti dei file di configurazione chiamati `ip.conf` che memorizzano i seguenti comandi:
+Sui vari client, nella cartella `/root/`, sono stati definiti dei file di configurazione chiamati `ip.conf` che memorizzano i seguenti comandi:
 ```bash
 ip link set dev eth0 address x0:x0:x0:x0:x0:x0 
 ip addr add 10.0.0.X/24 dev eth0 
 ```
 dove `x0` va sostituito con `a0` per il `client-1`, con `b0` per `client-2` e con `c0` per il `client-3`; allo stesso modo `X` va sostituita con `1`, `2` o `3` rispettivamente per `client-1`, `client-2` e `client-3`. 
 
-Le configurazioni sono rese attive dal comando `bash ~/lab02/ip.conf`.
+Le configurazioni sono rese attive dal comando `bash ~/ip.conf`.
 
 ## Configurazione del router
 ### Creazione del bridge
@@ -39,10 +39,10 @@ ip link set dev eth2 master bridge
 
 Questi comandi servono a creare una interfaccia di tipo `bridge` con il nome specificato, la attiva e poi si collegano le interfacce `eth0, eth1, eth2` a questo bridge. In questo modo, sono stati collegati tra loro segmenti della rete. 
 
-Queste configurazioni sono memorizzate nel file `~/lab02/ip.conf` del container e possono essere impostate col comando `bash ~/lab02/ip.conf`.
+Queste configurazioni sono memorizzate nel file `~/ip.conf` del container e possono essere impostate col comando `bash ~/ip.conf`.
 
 ### Aggiunta dei filtri
-Per gestire la sicurezza attraverso le *Access Control List* è necessario impostare delle regole che filtrano il traffico, inserite nel file `/root/lab02/ebtables.conf`: 
+Per gestire la sicurezza attraverso le *Access Control List* è necessario impostare delle regole che filtrano il traffico, inserite nel file `/root/ebtables.conf`: 
 
 ```bash
 ebtables -A FORWARD --in-interface eth0 -s ! a0:a0:a0:a0:a0:a0 -j DROP

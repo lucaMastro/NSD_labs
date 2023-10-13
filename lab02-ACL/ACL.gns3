@@ -4,8 +4,8 @@
     "auto_start": false,
     "drawing_grid_size": 25,
     "grid_size": 75,
-    "name": "nsd_02",
-    "project_id": "dcf57e29-c4af-483f-8ea3-d7e206fe4055",
+    "name": "nsd_02-1",
+    "project_id": "e9443cd5-c275-46be-b837-39c025ba9e29",
     "revision": 9,
     "scene_height": 1000,
     "scene_width": 2000,
@@ -18,7 +18,7 @@
         "computes": [],
         "drawings": [
             {
-                "drawing_id": "f310c1cd-6260-4599-92ec-428b597fd47d",
+                "drawing_id": "60177626-24f8-485b-a28a-928f359dcc69",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"21\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.1</text></svg>",
@@ -27,7 +27,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "fdf601ad-8182-48b1-873c-26cf39f07e64",
+                "drawing_id": "32d84b3c-9019-4a6a-bc83-ac29adaed9ca",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"21\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.3</text></svg>",
@@ -36,7 +36,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "923d5d57-bd04-427b-aa03-cb4c48dd216a",
+                "drawing_id": "25a04586-174b-45c8-9e50-2eaac414a9f8",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"21\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.2</text></svg>",
@@ -45,7 +45,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "4e3ca771-c149-4a51-99c3-e39af20133e4",
+                "drawing_id": "30c93ff3-3be5-479f-9285-6d967cd1e547",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"129\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">LAN: 10.0.0.0/24</text></svg>",
@@ -54,7 +54,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "8c623e90-eca2-4942-859e-6278091bee03",
+                "drawing_id": "aaa20ebe-95a5-4a8c-baf0-e960131af731",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"614.4705882352939\" height=\"376.4705882352941\"><ellipse cx=\"307\" rx=\"308\" cy=\"188\" ry=\"189\" fill=\"#ffffff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
@@ -63,7 +63,7 @@
                 "z": 0
             },
             {
-                "drawing_id": "ebfcf1cc-c91c-4f14-a900-4b721fcf15c2",
+                "drawing_id": "bf2319e4-46fc-4cc2-8240-6552b9122e35",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"140\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">a0:a0:a0:a0:a0:a0</text></svg>",
@@ -72,7 +72,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "681bc6a9-6008-4d4d-8268-e45d0df4f391",
+                "drawing_id": "89c31c10-d94d-47b8-9ae6-aedf742dd2e1",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"134\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">c0:c0:c0:c0:c0:c0</text></svg>",
@@ -81,7 +81,7 @@
                 "z": 2
             },
             {
-                "drawing_id": "10eaffcf-70f7-404e-8cc7-d2c3835ea6a8",
+                "drawing_id": "dd596a19-d344-483d-9ccb-c618f3586d10",
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"143\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">d0:d0:d0:d0:d0:d0</text></svg>",
@@ -93,7 +93,7 @@
         "links": [
             {
                 "filters": {},
-                "link_id": "31b2fb47-5ec4-4527-b2a1-774c58e89314",
+                "link_id": "baf98a95-53fb-4a25-ab1a-7a8d74267925",
                 "link_style": {},
                 "nodes": [
                     {
@@ -105,7 +105,7 @@
                             "x": 69,
                             "y": 30
                         },
-                        "node_id": "68a0551d-5b37-438f-a3a7-4356d21ffb77",
+                        "node_id": "542b3536-16cf-4731-8e13-e0712ec02762",
                         "port_number": 0
                     },
                     {
@@ -117,7 +117,7 @@
                             "x": -53,
                             "y": 23
                         },
-                        "node_id": "a816d586-e867-4838-8850-3f7ccf5b3670",
+                        "node_id": "f8390983-4ded-403c-ab64-99fa0e167d9f",
                         "port_number": 0
                     }
                 ],
@@ -125,7 +125,7 @@
             },
             {
                 "filters": {},
-                "link_id": "0a2d89a4-5b05-4ab3-915b-c45380f56c56",
+                "link_id": "b07cfab5-984e-47de-b735-1c35be785a47",
                 "link_style": {},
                 "nodes": [
                     {
@@ -137,7 +137,7 @@
                             "x": 33,
                             "y": -22
                         },
-                        "node_id": "a816d586-e867-4838-8850-3f7ccf5b3670",
+                        "node_id": "f8390983-4ded-403c-ab64-99fa0e167d9f",
                         "port_number": 0
                     },
                     {
@@ -149,7 +149,7 @@
                             "x": 41,
                             "y": 68
                         },
-                        "node_id": "0d93ee69-008c-4ecb-ad7a-6e3476ee88b6",
+                        "node_id": "0f2f2e0a-e9cd-40bd-8e8f-8a3d25dd3740",
                         "port_number": 0
                     }
                 ],
@@ -157,7 +157,7 @@
             },
             {
                 "filters": {},
-                "link_id": "c75647f6-c1ef-46c9-9a5c-7868ce9d7be7",
+                "link_id": "00799017-bc26-4574-a886-4d72561875a3",
                 "link_style": {},
                 "nodes": [
                     {
@@ -169,7 +169,7 @@
                             "x": 69,
                             "y": 30
                         },
-                        "node_id": "a816d586-e867-4838-8850-3f7ccf5b3670",
+                        "node_id": "f8390983-4ded-403c-ab64-99fa0e167d9f",
                         "port_number": 0
                     },
                     {
@@ -181,7 +181,7 @@
                             "x": -41,
                             "y": 21
                         },
-                        "node_id": "3c3f2461-94a0-4b7b-ac00-55e599701be5",
+                        "node_id": "84f9744f-200c-41d5-bae9-1a8086a5dc7c",
                         "port_number": 0
                     }
                 ],
@@ -206,7 +206,7 @@
                 },
                 "locked": false,
                 "name": "client-1",
-                "node_id": "68a0551d-5b37-438f-a3a7-4356d21ffb77",
+                "node_id": "542b3536-16cf-4731-8e13-e0712ec02762",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -216,7 +216,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "6e2bc70ed71981891ffc903906d4ddbf9ef4720745fa15cf64b338c5416a968e",
+                    "container_id": "b823321d03423b946e04d0f4c16d8ccbdbb992616b871895fd48ea11021ead67",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -235,7 +235,7 @@
             },
             {
                 "compute_id": "vm",
-                "console": 5002,
+                "console": 5008,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -250,17 +250,17 @@
                 },
                 "locked": false,
                 "name": "client-2",
-                "node_id": "0d93ee69-008c-4ecb-ad7a-6e3476ee88b6",
+                "node_id": "0f2f2e0a-e9cd-40bd-8e8f-8a3d25dd3740",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 1,
-                    "aux": 5003,
+                    "aux": 5009,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "cadfad4e0b0a3adc15ffc4f96fd51574db4554967cd7a35c872d81f1c7b121de",
+                    "container_id": "621cba073dc12804ce75c199112264d1b66be7cedab74b610eecf9acb8bf6a01",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -279,7 +279,7 @@
             },
             {
                 "compute_id": "vm",
-                "console": 5004,
+                "console": 5012,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -294,17 +294,17 @@
                 },
                 "locked": false,
                 "name": "client-3",
-                "node_id": "3c3f2461-94a0-4b7b-ac00-55e599701be5",
+                "node_id": "84f9744f-200c-41d5-bae9-1a8086a5dc7c",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 1,
-                    "aux": 5005,
+                    "aux": 5013,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "d61b815132e5644ba397faad68c428a119790e2ada0ea9a82d0e8ee71cc1fed0",
+                    "container_id": "9b76e22b2b17dbd1df1e8d689c74e9fab5985b8a66ab4e3534a0bff17df791ec",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -323,7 +323,7 @@
             },
             {
                 "compute_id": "vm",
-                "console": 5006,
+                "console": 5014,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -338,17 +338,17 @@
                 },
                 "locked": false,
                 "name": "switch-1",
-                "node_id": "a816d586-e867-4838-8850-3f7ccf5b3670",
+                "node_id": "f8390983-4ded-403c-ab64-99fa0e167d9f",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
                     "adapters": 4,
-                    "aux": 5007,
+                    "aux": 5015,
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "e8534d749b335f5e7e7761f9d83ccd4b0c44de824e96185e33638ee26a88cf90",
+                    "container_id": "284378c45805fa3334c773baef419e336bdd7770dd13ec244f70645f295f06b6",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
