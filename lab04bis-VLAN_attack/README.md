@@ -14,7 +14,8 @@ Con queste premesse, l'attacco funziona sfruttando il comportamento tipico dello
 L'idea è quindi quella di inviare un pacchetto con **due** tag: il primo deve essere quello della native VLAN dello switch, l'altro è quello della rete VLAN verso cui si vuole inoltrare il pacchetto. Così facendo, il pacchetto ricevuto dallo switch viene manipolato affinché il primo tag venga rimosso, senza sapere che a seguire c'è un ulteriore tag di un'altra VLAN. Il pacchetto che viene inoltrato, quindi, sarà un pacchetto legale diretto verso una VLAN a cui l'attacker **non** appartiene. Questo attacco, però, permette all'attaccante solo di inviare pacchetti verso un'altra VLAN, non di riceverne.
 
 - Qual è il vantaggio per un attaccante di usare un doppio incapsulamento? Infatti l'attaccante può comunque creare pacchetti col tag diretto alla VLAN target
-
+    
+- L'attacco funziona solo se l'attaccante è connesso dietro un _access link_, altrimenti l'invio di pacchetti con VLAN 20 sarebbe lecito. In questo scenario, l'attacco funziona come descritto. Non è possibile inviare direttamente pacchetti con il tag VLAN 20 perché lo switch lo scarterebbe: si aspetta infatti da quel link pacchetti per la VLAN 1. È però possibile inviare pacchetti con doppio tag per motivi di scalabilità, ma il primo dei due deve essere comunque quello relativo alla native VLAN dello switch.
 
 # Note nell'esecuzione del laboratorio
 
