@@ -4,7 +4,7 @@
 L'attacco prevede che l'attaccante sia connesso tramite un *Trunk link* a uno switch, e che possa inviare pacchetti taggati con l'id della native VLAN dello switch. Ad esempio, consideriamo la seguente topologia di esempio:
 
 <div style="text-align: center">
-<img src="./images/topology_example.png" alt="Experimental topology" style="width: 80%;">
+<img src="./images/topology_example.png" alt="Example topology" style="width: 80%;">
 </div>
 
 In questo scenario, è necessario che l'*attacker* possa inviare pacchetti diretti alla `VLAN 10` e che sia connesso allo switch tramite un trunk link.
@@ -21,7 +21,7 @@ L'idea è quindi quella di inviare un pacchetto con **due** tag: il primo deve e
 
 ## Infrastruttura
 <div style="text-align: center">
-<img src="./images/topology.png" alt="Experimental topology" style="width: 80%;">
+<img src="./images/topology.png" alt="Topology" style="width: 80%;">
 </div>
 
 Il router e gli switch sono lo stesso docker container dei client con la differenza che hanno più interfacce di rete e vengono configurati opportunamente.

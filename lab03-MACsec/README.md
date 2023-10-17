@@ -12,7 +12,7 @@ La suite crittografica predefinita specificata dal protocollo è GCM-AES-128 (Ga
 # Note nell'esecuzione del laboratorio
 ## Infrastruttura
 <div style="text-align: center">
-<img src="./images/topology.png" alt="Experimental topology" style="width: 80%;">
+<img src="./images/topology.png" alt="Topology" style="width: 80%;">
 </div>
 
 Il router denominato `switch-1` è lo stesso docker container dei client con la differenza che ha più interfacce di rete e viene poi configurato come un router.

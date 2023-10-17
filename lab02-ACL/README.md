@@ -11,7 +11,7 @@ Un *MAC flooding attack* è un attacco per cui si cerca di saturare la memoria d
 
 ## Infrastruttura
 <div style="text-align: center">
-<img src="./images/topology.png" alt="Experimental topology" style="width: 80%;">
+<img src="./images/topology.png" alt="Topology" style="width: 80%;">
 </div>
 
 Il router denominato `switch-1` è lo stesso docker container dei client con la differenza che ha più interfacce di rete e viene poi configurato come un router.

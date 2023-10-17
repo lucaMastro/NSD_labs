@@ -1,0 +1,20 @@
+uBridge version 0.9.18 running with libpcap version 1.10.1 (with TPACKET_V3)
+Hypervisor TCP control server started (IP 192.168.56.1 port 42735).
+UDP tunnel connecting from local port 10003 to IPv4 address 127.0.0.1 on port 10002
+UDP tunnel connecting from local port 10016 to IPv4 address 192.168.56.101 on port 20000
+UDP tunnel connecting from local port 10005 to IPv4 address 127.0.0.1 on port 10004
+UDP tunnel connecting from local port 10017 to IPv4 address 192.168.56.101 on port 20001
+UDP tunnel connecting from local port 10007 to IPv4 address 127.0.0.1 on port 10006
+UDP tunnel connecting from local port 10018 to IPv4 address 192.168.56.101 on port 20002
+Destination NIO listener thread for VBOX-d72e5dc7-ae8d-42eb-8233-58a88e7ee76a-2 has started
+Source NIO listener thread for VBOX-d72e5dc7-ae8d-42eb-8233-58a88e7ee76a-1 has started
+Destination NIO listener thread for VBOX-d72e5dc7-ae8d-42eb-8233-58a88e7ee76a-3 has started
+Source NIO listener thread for VBOX-d72e5dc7-ae8d-42eb-8233-58a88e7ee76a-3 has started
+Source NIO listener thread for VBOX-d72e5dc7-ae8d-42eb-8233-58a88e7ee76a-2 has started
+Destination NIO listener thread for VBOX-d72e5dc7-ae8d-42eb-8233-58a88e7ee76a-1 has started
+Capturing to file '/home/luca/Scrivania/NSD/nsd_laboratories/lab05-802.1x-md5/802.1x-md5/project-files/captures/pippo_eth0_to_cumulus-1_swp1.pcap'
+Capturing to file '/home/luca/Scrivania/NSD/nsd_laboratories/lab05-802.1x-md5/802.1x-md5/project-files/captures/cumulus-1_swp3_to_freeradius-1_eth0.pcap'
+Capturing to file '/home/luca/Scrivania/NSD/nsd_laboratories/lab05-802.1x-md5/802.1x-md5/project-files/captures/pippo_eth0_to_cumulus-1_swp1.pcap'
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Hypervisor: stopped.

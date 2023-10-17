@@ -22,7 +22,7 @@ Concetto approfondito su [questa guida](https://www.practicalnetworking.net/stan
 
 ## Infrastruttura
 <div style="text-align: center">
-<img src="./images/topology.png" alt="Experimental topology" style="width: 80%;">
+<img src="./images/topology.png" alt="Topology" style="width: 80%;">
 </div>
 
 Il router e gli switch sono lo stesso docker container dei client con la differenza che hanno più interfacce di rete e vengono configurati opportunamente.

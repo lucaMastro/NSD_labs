@@ -11,3 +11,7 @@ Repository dedicato ai vari laboratori del corso Network and System Defence.
 - [VLAN](https://github.com/lucaMastro/NSD_labs/tree/main/lab04-VLAN): lab sulla configurazione di una rete tramite VLAN.
 
 - [VLAN double encapsulation attack](https://github.com/lucaMastro/NSD_labs/tree/main/lab04bis-VLAN_attack): lab che simula l'attacco double encapsulation per reti VLAN.
+
+- [802.1x - MD5 challenge](https://github.com/lucaMastro/NSD_labs/tree/main/lab05-802.1x-md5): lab sulla configurazione di una rete con 802.1x e *MD5 challenge*.
+
+- [VLAN double encapsulation attack](https://github.com/lucaMastro/NSD_labs/tree/main/lab06-MKA): lab sulla configurazione di una rete con 802.1x e MACsec Key Agreemen (MKA) tramite l'interfaccia `network manager`.
