@@ -14,4 +14,6 @@ Repository dedicato ai vari laboratori del corso Network and System Defence.
 
 - [802.1x - MD5 challenge](https://github.com/lucaMastro/NSD_labs/tree/main/lab05-802.1x-md5): lab sulla configurazione di una rete con 802.1x e *MD5 challenge*.
 
-- [VLAN double encapsulation attack](https://github.com/lucaMastro/NSD_labs/tree/main/lab06-MKA): lab sulla configurazione di una rete con 802.1x e MACsec Key Agreemen (MKA) tramite l'interfaccia `network manager`.
+- [MACsec key agreement](https://github.com/lucaMastro/NSD_labs/tree/main/lab06-MKA): lab sulla configurazione di una rete con 802.1x e MACsec Key Agreemen (MKA) tramite l'interfaccia `network manager`.
+
+- [Firewall](https://github.com/lucaMastro/NSD_labs/tree/main/lab07-Firewall): lab sulla configurazione di regole per implementare un firewall usando `NETFILTER`.
