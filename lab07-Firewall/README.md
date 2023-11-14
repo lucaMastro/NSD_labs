@@ -56,6 +56,63 @@ Utilizzato per proteggere un singolo host. È disponibile nel sistema operativo 
 
 Controlla il traffico tra un _personal computer_ o una workstation e la rete. Tipicamente è uno strumento software installato sul computer ma spesso si trova su un router che collega i computer alla rete DSL. Il suo scopo primario è quello di impedire accesso remoto ma può anche analizzare il traffico per individuare attività di malware o warms.
 
+## Packet classification
+
+Si definisce una regola come un insieme di campi _field_. Un pacchetto P fa match con una regola R se ogni campo dell'header del pacchetto fa match con il relativo campo della regola. C'è quindi un _field_ per ogni campo header del pacchetto. Un insieme di regole è detto _classifier_. Per ogni _field_ di una regola, sono ammessi 3 tipi di match:
+
+- match esatto
+- prefix match
+- range match
+
+Inoltre, ad ogni regola è associata un'azione che deve essere eseguita sul pacchetto se questo fa match della regola (nel caso del firewall classico l'azione è `drop` o `accept`). Ovviamente, un pacchetto potrebbe fare match su più di una regola: in questo caso, quella applicata sarà quella che ha un _costo_ associato minore. Di conseguenza, il costo è solo un metodo per esprimere una relazione di importanza tra le regole. Ad esempio, nelle ACL, la regola applicata è la prima incontrata che fa match; il comportamento è riproducibile usando come costo la posizione della regola nel database: infatti, man mano che si scorre, aumenta l'indice e quindi il costo. Quindi, quello che in genere si fa, è utilizzare un algoritmo di ricerca **lineare**.
+
+Il requisto più importante per applicare questo genere di regole è quello di essere veloci. Tuttavia, fare il lookup può essere molto costoso, anche in caso di utilizzo di cache: infatti, in quest'ultimo caso, anche un 10% di miss rate può degradare notevolmente le prestazioni in caso di una lunga lista di regole. Risulta quindi necessario utilizzare un algoritmo efficiente. Si introducono quindi le _Content Addressable Memory_ (CAM), estese poi a _ternary CAM_: si tratta di un componente **hardware** in grado di ritornare il primo elemento a fare matching usando una ricerca parallela. Nelle _ternary_, ogni bit può essere 0, 1 o anche una wildcard. 
+
+>**NOTA**: la wildcard `*` non è intesa nel suo significato comune, cioè che accetta qualsiasi valore, ma specifica il comportamento di default nel caso nessuna delle regole precedenti venga soddisfatta.
+
+Tuttavia non sono un _silver bullet_ ed hanno diversi svantaggi:
+
+- è difficile integrare la logica per il forward
+- è necessario moltiplicare le regole nel caso di _range match_
+
+
+### Tecnich _divide-and-conquer_
+
+#### Bit Vector Linear Search
+
+Dato un nuovo pacchetto P, si costruisce una bitmask per ogni `field` (colonna) del database. Per l'i-esimo campo del database si controlla il relativo campo del pacchetto. Nella `j-esima` posizione della bitmask ci sarà un 1 se il campo del pacchetto fa match con il valore espresso nello `j-esima` regola del database. Dopo aver costruito le bitmask, queste si mettono in `and` tra loro, e si applica la regola corrispondente al primo `1` incontrato scorrendo il risultato. 
+
+<div style="text-align: center">
+<img src='./images/bit_vector_m_example.png' alt="example_m_dest_bit_vector" style="width: 80%;"><br>
+
+_Esempio nel caso il pacchetto P abbia `M` come `destination` field._
+</div>
+
+> Le bitmask si possono preparare a priori, in modo che quando arriva un nuovo pacchetto, si sceglie la bitmask relativa al valore del pacchetto del singolo campo, senza doverla necessariamente ricalcolare.
+
+<div style="text-align: center">
+<img src='./images/pre_computed_bitmasks.png' alt="example_m_dest_bit_vector" style="width: 80%;"><br>
+
+Bitmask selezionate in caso arrivi un pacchetto con:
+```
+Destination = T1
+Source = T0
+DstPort = 123
+SrcPort = 123
+Flag = UDP
+```
+</div>
+
+Queste bitmask evidenziate vanno messe in `and` e si seleziona poi la regola con maggiore priorià:
+
+<div style="text-align: center">
+<img src='./images/
+matching_bit_vector.png' alt="example_m_dest_bit_vector" style="width: 80%;"><br>
+</div>
+
+La ricerca della regola con meno priorità, però, mantiene una complessità lineare. Una possibile soluzione è quella di usare la ```strategia di DeBruijn```.
+
+
 ## Note nell'esecuzione del laboratorio
 
 Configurazione del seguente schema:
@@ -145,7 +202,7 @@ iptables -A FORWARD -i $LAN -p udp --dport 53 -j ACCEPT
 
 # from lan to dnz
 iptables -A FORWARD -i $LAN -o $DMZ -j ACCEPT
-# from internet to dnz 
+# from internet to dnz
 iptables -A FORWARD -i $WAN -o $DMZ -j ACCEPT
 # from dmz to internet
 iptables -A FORWARD -i $DMZ -o $WAN -j ACCEPT
@@ -160,7 +217,7 @@ iptables -A INPUT -p icmp -j ACCEPT
 iptables -A FORWARD -p icmp -j ACCEPT
 ```
 
-Con il flag `-P` imposto la default policy; in particolare quello sull'*hook* `OUTPUT` implementa la policy numero 6. Dopo aver configurato il traffico per le connessioni stabilite e accettato il traffico in arrivo dalla LAN per i vari protocolli, si configurano esplicitamente i flussi considerando da dove arrivano e verso dove vanno. Notare che, come interfaccia di output, non c'è mai la LAN perché non si vuole accettare pacchetti verso la LAN.
+Con il flag `-P` imposto la default policy; in particolare quello sull'_hook_ `OUTPUT` implementa la policy numero 6. Dopo aver configurato il traffico per le connessioni stabilite e accettato il traffico in arrivo dalla LAN per i vari protocolli, si configurano esplicitamente i flussi considerando da dove arrivano e verso dove vanno. Notare che, come interfaccia di output, non c'è mai la LAN perché non si vuole accettare pacchetti verso la LAN.
 
 ### Configurazione server
 
@@ -191,10 +248,10 @@ iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 # ssh
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
-Poiché è un server, non abbiamo bisogno di configurare le policies per il `FORWARD`. 
+
+Poiché è un server, non abbiamo bisogno di configurare le policies per il `FORWARD`.
 
 **NOTA**: dopo aver impostata la default policy `iptables -P INPUT DROP`, devo per forza mettere un filtro: altrimenti tutti i pacchetti che arrivano saranno scartati. Ad esempio, se il server fa una richiesta dns, la sua risposta non deve essere scartata; ecco perché `iptables -A INPUT -m state --state ESTABLISHED -j ACCEPT`.
-
 
 ### Configurazione client
 
