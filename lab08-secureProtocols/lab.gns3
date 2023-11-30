@@ -221,7 +221,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "5b02e0a535d2f8681e1b8d65bba43387aa5c211abb75a596acd4494ef6129d2b",
+                    "container_id": "42c8b5a10a9e3bdd8fbc421c0bf55ddc2cdafd622b3d2ec323c06a3e1dd5144e",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -265,7 +265,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "819da10328ef3199edd26e9a15c3dabeb7b62f62641f069a7834624861614784",
+                    "container_id": "bb122b3664152eaebbffeffcedf8ce41a33de29ca515367dc5cbd79113d160df",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [
@@ -396,8 +396,8 @@
                 "symbol": ":/symbols/cloud.svg",
                 "template_id": "df8f4ea9-33b7-3e96-86a2-c39bc9bb649c",
                 "width": 159,
-                "x": 308,
-                "y": -83,
+                "x": 420,
+                "y": -94,
                 "z": 1
             },
             {
