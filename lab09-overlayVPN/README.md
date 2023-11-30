@@ -84,3 +84,36 @@ Si può eseguire lo script `/root/first_part.sh` che automatizza il processo. Qu
 ## clients openvpn
 
 Nei client, c'è un file `clean.sh` che elimina crt e key vecchie. C'è anche il `main.sh` che deve essere eseguito dopo aver copiato correttamente le nuove chiavi e i certificati nella cartella `/root/ovpn`. Questo script non fa altro che inizializzare la configurazione ip e avviare il processo `openvpn` in background.
+
+Dopo aver avviato la comunicazione `openvpn`, si può notare la seguente cosa:
+
+```bash
+# client1-ovpn
+$ ip a
+# loopback removed
+...
+# tun0: è l'interfaccia virtuale che rappresenta il gateway interno ed è una connessione punto punto
+2: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 500
+    link/none 
+    inet 192.168.100.6 peer 192.168.100.5/32 scope global tun0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::6eb7:2c3a:5e8f:c070/64 scope link stable-privacy 
+       valid_lft forever preferred_lft forever
+35: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 8a:b3:e8:a3:10:10 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.100/24 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::88b3:e8ff:fea3:1010/64 scope link 
+       valid_lft forever preferred_lft forever
+# routes:
+$ ip r
+default via 192.168.1.1 dev eth0 
+# per i pacchetti verso la sottorete 10.0.0.0 o 192.168.0.0, il next hope è 192.168.100.5 dell'interfaccia tun0
+10.0.0.0/24 via 192.168.100.5 dev tun0 
+192.168.0.0/24 via 192.168.100.5 dev tun0 
+# -------------------------------
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.100 
+# la seguente è la rete overlay che volevamo creare
+192.168.100.0/24 via 192.168.100.5 dev tun0 
+192.168.100.5 dev tun0 proto kernel scope link src 192.168.100.6 
+```
