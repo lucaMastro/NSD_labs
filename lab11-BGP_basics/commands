@@ -1,0 +1,149 @@
+R1
+--------
+
+conf t
+# l'interfaccia di loopback la usiamo per simulare una rete privata dietro il router
+interface lo
+
+# se pingo qualsiasi cosa, mi risponde nella rete specificata
+ip address 1.0.0.1/16
+ip address 1.1.0.1/16
+
+
+# per vedere la configurazione:
+# end
+# show int bri
+# conf t
+
+interface eth0
+ip address 10.0.12.1/30
+# in caso di errori usa il seguente comando:
+# no ip address 10.0.12.1/30
+
+# bgp conf
+router bgp 100
+# reti che voglio esportare
+network 1.0.0.0/16
+network 1.1.0.0/16
+
+neighbor 10.0.12.2 remote-as 200
+end
+
+# show running-config
+
+# salva la conf per renderla attiva allo startup:
+# copy running-config startup-config
+
+
+R2
+--------
+
+conf t
+interface lo
+ip address 2.2.0.1/16
+ip address 2.255.0.2/32
+interface eth0
+ip address 10.0.12.2/30
+interface eth1
+ip address 10.0.25.1/30
+interface eth2
+ip address 10.0.24.1/30
+
+# configurazione dell'internal gateway protocol: sincronizza i router nell'AS
+router ospf
+router-id 2.255.0.2
+# indirizzi delle reti interne a cui siamo connessi. Area 0 è legata al portocollo ospf, che può usare diverse aree.
+network 2.2.0.0/16 area 0
+network 2.255.0.2/32 area 0
+network 10.0.24.0/30 area 0
+network 10.0.25.0/30 area 0
+
+router bgp 200
+network 2.2.0.0/16
+# internal bgp peering relationship
+neighbor 2.255.0.4 remote-as 200
+
+# aggiorno la source alla loopback address
+neighbor 2.255.0.4 update-source 2.255.0.2
+# specifichiamo che venga aggiunto 2.255.0.2 come next hop
+neighbor 2.255.0.4 next-hop-self
+
+# come sopra
+neighbor 2.255.0.5 remote-as 200
+neighbor 2.255.0.5 update-source 2.255.0.2
+neighbor 2.255.0.5 next-hop-self
+
+# configuro il peer bgp esterno
+neighbor 10.0.12.1 remote-as 100
+end
+
+R5
+-----
+conf t
+interface lo
+ip address 2.5.0.1/16
+ip address 2.255.0.5/32
+interface eth0
+ip address 10.0.25.2/30
+interface eth1
+ip address 10.0.45.2/30
+interface eth2
+ip address 10.0.35.2/30
+
+router ospf
+router-id 2.255.0.5
+network 2.4.0.0/24 area 0
+network 2.255.0.5/32 area 0
+network 10.0.25.0/30 area 0
+network 10.0.45.0/30 area 0
+
+router bgp 200
+network 2.5.0.0/16
+neighbor 2.255.0.2 remote-as 200
+neighbor 2.255.0.2 update-source 2.255.0.5
+neighbor 2.255.0.2 next-hop-self
+neighbor 2.255.0.4 remote-as 200
+neighbor 2.255.0.4 update-source 2.255.0.5
+neighbor 2.255.0.4 next-hop-self
+neighbor 10.0.35.1 remote-as 300
+
+R4
+----
+conf t
+interface lo
+ip address 2.4.0.1/16
+ip address 2.255.0.4/32
+interface eth0
+ip address 10.0.24.2/30
+interface eth1
+ip address 10.0.45.1/30
+
+router ospf
+router-id 2.255.0.4
+network 2.4.0.0/16 area 0
+network 2.255.0.4/32 area 0
+network 10.0.24.0/30 area 0
+network 10.0.45.0/30 area 0
+
+router bgp 200
+network 2.4.0.0/16
+neighbor 2.255.0.2 remote-as 200
+neighbor 2.255.0.2 update-source 2.255.0.4
+neighbor 2.255.0.2 next-hop-self
+neighbor 2.255.0.5 remote-as 200
+neighbor 2.255.0.5 update-source 2.255.0.4
+neighbor 2.255.0.5 next-hop-self
+end
+
+
+R3
+-------
+conf t
+interface lo
+ip address 3.0.0.1/8
+interface eth0
+ip address 10.0.35.1/30
+
+router bgp 300
+network 3.0.0.0/8
+neighbor 10.0.35.2 remote-as 200

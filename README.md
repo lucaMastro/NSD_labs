@@ -17,3 +17,15 @@ Repository dedicato ai vari laboratori del corso Network and System Defence.
 - [MACsec key agreement](https://github.com/lucaMastro/NSD_labs/tree/main/lab06-MKA): lab sulla configurazione di una rete con 802.1x e MACsec Key Agreemen (MKA) tramite l'interfaccia `network manager`.
 
 - [Firewall](https://github.com/lucaMastro/NSD_labs/tree/main/lab07-Firewall): lab sulla configurazione di regole per implementare un firewall usando `NETFILTER`.
+
+- [Secure protocols](https://github.com/lucaMastro/NSD_labs/tree/main/lab08-secureProtocols): lab su un downgrade attack
+
+- [Overlay VPN](https://github.com/lucaMastro/NSD_labs/tree/main/lab09-overlayVPN): lab sull'utilizzo di `openVPN` per costruire una rete privata su una rete pubblica
+
+- [Ipsec](https://github.com/lucaMastro/NSD_labs/tree/main/lab10-IPsec): lab sulla configurazione di IPsec
+
+- [BGP basics](https://github.com/lucaMastro/NSD_labs/tree/main/lab11-BGP_basics): lab sulla configurazione di BGP
+
+- [BGP MPLS for VPN](https://github.com/lucaMastro/NSD_labs/tree/main/lab12-BGP-MPLS_VPN): lab sull'applicazione di MPLS per creare una VPN su BGP
+
+- [BGP security](https://github.com/lucaMastro/NSD_labs/tree/main/lab13-BGP-security): no lab per questo argomento. 
