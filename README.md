@@ -29,3 +29,5 @@ Repository dedicato ai vari laboratori del corso Network and System Defence.
 - [BGP MPLS for VPN](https://github.com/lucaMastro/NSD_labs/tree/main/lab12-BGP-MPLS_VPN): lab sull'applicazione di MPLS per creare una VPN su BGP
 
 - [BGP security](https://github.com/lucaMastro/NSD_labs/tree/main/lab13-BGP-security): no lab per questo argomento. 
+
+- [DNS security](https://github.com/lucaMastro/NSD_labs/tree/main/lab14-DNS-security): no lab per questo argomento. 
